@@ -26,7 +26,25 @@
 </body>
 
 <div class="wrapper">
-    <div class="header"></div>
+    <div class="header">
+        <div class="row">
+            <div class="col-md-2">
+                <img src="./asset/image/toggle.png" alt="">
+            </div>
+            <div class="col-md-8">
+                <img class="img_gold" src="./asset/image/gold.png" alt="" width="165px" height="55">
+            </div>
+            <div class="col-md-2">
+                <div class="social">
+                    <img src="./asset/image/social/instagram.png" alt="">
+                    <img src="./asset/image/social/linkedin.png" alt="">
+                    <img src="./asset/image/social/youtube.png" alt="">
+                    <img src="./asset/image/social/twitter.png" alt="">
+                    <img src="./asset/image/social/pinterest.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="main">
         <div class="introduce">
             <h1 class="intro-title">Shop Pierre’s products</h1>
@@ -131,6 +149,17 @@
 <!-- Vendor js -->
 <script src="./asset/vendor/jquery3.5/jquery-3.5.1.slim.min.js"></script>
 <script src="./asset/vendor/bootstrap4/bootstrap.bundle.min.js"></script>
+
+<script>
+    $(window).scroll(function(){
+        if ($(window).scrollTop() >= 120) {
+            $('.header').addClass('sticky');
+        }
+        else {
+            $('.header').removeClass('sticky');
+        }
+    });
+</script>
 
 </html>
 

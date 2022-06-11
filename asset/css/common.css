@@ -3,6 +3,35 @@ body {
 }
 
 /* ========== HEADER ========== */
+.header {
+    padding: 50px 150px 25px 150px;
+    position: relative;
+    width: 100%;
+    z-index: 1099;
+    opacity: 1;
+}
+
+.header img {
+    cursor: pointer;
+}
+
+.header .img_gold {
+    display: block;
+    margin: 0 auto;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #fff;
+    z-index: 9999;
+    padding: 25px 150px 25px 150px;
+}
+
+.sticky + .main {
+    padding-top: 200px;
+}
 /* ========== END HEADER ========== */
 
 /* ========== FOOTER ========== */
